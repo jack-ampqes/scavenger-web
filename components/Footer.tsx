@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -6,9 +7,9 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.links}>
-            <a href="/">Home</a>
-            <a href="/inquiry">New Inquiry</a>
-            <a href="/contact">Contact</a>
+            <Link href="/">Home</Link>
+            <Link href="/inquiry">New Inquiry</Link>
+            <Link href="/contact">Contact</Link>
           </div>
           
           <div className={styles.contact}>
