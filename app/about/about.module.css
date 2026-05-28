@@ -1,0 +1,439 @@
+.hero {
+  padding: 120px 0 80px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #993809;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.paragraph {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.sectionTitle {
+  font-family: 'BBH Bartle', sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  color: #993809;
+  margin-bottom: 48px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.carouselWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.cardsColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsContainer {
+  position: relative;
+  min-height: 500px;
+  margin-bottom: 32px;
+}
+
+.carouselControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.arrowButton {
+  background: #ffffff;
+  border: 2px solid #993809;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #993809;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.arrowButton:hover {
+  background: #993809;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.arrowButton:active {
+  transform: scale(0.95);
+}
+
+.dots {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dot {
+  background: #ffffff;
+  border: 2px solid #993809;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #993809;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.dot:hover {
+  background: rgba(153, 56, 9, 0.1);
+  transform: scale(1.1);
+}
+
+.dotActive {
+  background: #993809;
+  color: #ffffff;
+  border-color: #993809;
+}
+
+.dot:active {
+  transform: scale(0.95);
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 48px;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 12px rgba(153, 56, 9, 0.08);
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.cardActive {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  border-color: rgba(153, 56, 9, 0.5);
+  box-shadow: 0 8px 24px rgba(153, 56, 9, 0.3);
+}
+
+.cardHidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.imageContainer {
+  position: sticky;
+  top: 120px;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(153, 56, 9, 0.2);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imageActive {
+  opacity: 1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #993809;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.cardDescription {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.cardDescription:last-child {
+  margin-bottom: 0;
+}
+
+.cardDescription strong {
+  font-weight: 600;
+  color: #993809;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.list li {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #993809;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wesWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.wesContent {
+  max-width: 100%;
+}
+
+.wesImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wesImage {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(153, 56, 9, 0.2);
+}
+
+.contact {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactLink {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 18px;
+  color: #993809;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #7a2d07;
+  text-decoration: underline;
+}
+
+@media (max-width: 968px) {
+  .carouselWrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 24px;
+  }
+
+  .imageContainer {
+    position: relative;
+    top: 0;
+    height: 400px;
+    order: -1;
+  }
+
+  .cardsContainer {
+    min-height: 350px;
+  }
+
+  .card {
+    padding: 36px;
+  }
+
+  .carouselControls {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .arrowButton {
+    width: 44px;
+    height: 44px;
+  }
+
+  .dot {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .wesWrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .wesImageContainer {
+    order: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0 60px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .carouselWrapper {
+    padding: 0 16px;
+  }
+
+  .mainTitle {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .cardsContainer {
+    min-height: 300px;
+  }
+
+  .card {
+    padding: 28px;
+  }
+
+  .cardTitle {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-family: 'BBH Bartle', sans-serif;
+  }
+
+  .cardDescription {
+    font-size: 20px;
+  }
+
+  .carouselControls {
+    gap: 16px;
+  }
+
+  .arrowButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrowButton svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .dot {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
