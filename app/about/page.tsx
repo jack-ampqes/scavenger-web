@@ -79,7 +79,7 @@ export default function About() {
           <h1 className={styles.mainTitle}>So...why SCAVENGER?</h1>
           <div className={styles.content}>
             <p className={styles.paragraph}>
-              SCAVENGER was founded to solve a critical problem: sourcing hard-to-find electrical equipment with immediate results. Whether you're facing a long lead time or an urgent outage, we specialize in fast access to inventory—ready-to-ship and surplus stock—to keep your operations running.
+              SCAVENGER was founded to solve a critical problem: sourcing hard-to-find electrical equipment with immediate results. Whether you&apos;re facing a long lead time or an urgent outage, we specialize in fast access to inventory—ready-to-ship and surplus stock—to keep your operations running.
             </p>
             <p className={styles.paragraph}>
               When every minute counts, we save you time, energy, and money. No waiting, no unnecessary downtime—just the equipment you need, when you need it.
@@ -183,7 +183,7 @@ export default function About() {
             </div>
             <div className={styles.wesContent}>
               <p className={styles.paragraph}>
-                Wes is the backbone of SCAVENGER, tracking down hard-to-find electrical gear and making procurement simple for our customers. Whether it's transformers, switchgear, or the rare part no one else can source, Wes gets it done—fast, reliable, and hassle-free.
+                Wes is the backbone of SCAVENGER, tracking down hard-to-find electrical gear and making procurement simple for our customers. Whether it&apos;s transformers, switchgear, or the rare part no one else can source, Wes gets it done—fast, reliable, and hassle-free.
               </p>
               <div className={styles.contact}>
                 <a href="mailto:wes.woolf@scavengersupply.com" className={styles.contactLink}>

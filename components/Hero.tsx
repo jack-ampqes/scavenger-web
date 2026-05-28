@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
       <div className={styles.content}>
         <p className={styles.tagline}>
-          Pssst...finding the right equipment doesn't have to be complicated.
+          Pssst...finding the right equipment doesn&apos;t have to be complicated.
         </p>
       </div>
     </section>

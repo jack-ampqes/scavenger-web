@@ -10,7 +10,7 @@ export default function Contact() {
           <h1 className={styles.mainTitle}>GET IN TOUCH</h1>
           <div className={styles.content}>
             <p className={styles.paragraph}>
-              Need equipment fast? Have questions about our services? We're here to help. Reach out anytime—we're available 24/7 to assist with your electrical equipment needs.
+              Need equipment fast? Have questions about our services? We&apos;re here to help. Reach out anytime—we&apos;re available 24/7 to assist with your electrical equipment needs.
             </p>
           </div>
         </div>
